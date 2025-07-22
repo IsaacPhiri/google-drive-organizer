@@ -1,4 +1,4 @@
-# Google Drive Categorizer with Gemini AI
+# Google Drive Organizer with Gemini AI
 
 This module automatically categorizes and organizes files in your Google Drive using Google Gemini AI for content analysis. It creates or merges folders based on content similarity and can remove empty or duplicate folders.
 
