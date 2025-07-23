@@ -7,7 +7,6 @@ from modules.organizer.folder_utils import merge_and_cleanup_folders, get_existi
 import logging
 import os
 import shutil
-import tempfile
 
 # Set up logging
 logging.basicConfig(level=logging.INFO)
