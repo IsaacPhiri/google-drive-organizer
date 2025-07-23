@@ -84,3 +84,4 @@ async def run_merge():
     except Exception as e:
         logger.error(f"Merge error: {str(e)}")
         raise HTTPException(status_code=500, detail=APIResponse(status="error", message=str(e)))
+    
