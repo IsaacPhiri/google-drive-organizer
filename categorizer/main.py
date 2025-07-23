@@ -4,7 +4,6 @@ from fastapi.middleware.cors import CORSMiddleware
 from api.routes import router as api_router
 
 app = FastAPI()
-app.include_router(auth_router, prefix="/auth")     # OAuth endpoints
 app.include_router(api_router, prefix="/api")       # Existing API routes
 
 # CORS config: allow React dev and any OAuth callbacks
