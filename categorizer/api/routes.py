@@ -28,7 +28,8 @@ async def list_files():
         files = list_drive_files()
         # Log total files found
         logger.info(f"Total files found: {len(files)}")
-        return APIResponse(status="success", message="Files retrieved successfully", data=files)
+        # return APIResponse with number of files
+        return APIResponse(status="success", message=f"Found {len(files)} files")
     except Exception as e:
         logger.error(f"Error listing files: {str(e)}")
         raise HTTPException(status_code=500, detail={"status": "error", "message": str(e)})
