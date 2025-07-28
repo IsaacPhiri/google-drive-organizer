@@ -108,7 +108,7 @@ function App() {
 
     // send query and get response back (can be changed to use POST method)
     try {
-      const response = await fetch(`/api/files`, {
+      const response = await fetch(`https://google-drive-organizer.onrender.com/api/files`, {
         method: 'GET'
       });
       if (!response.ok) {
@@ -134,7 +134,7 @@ function App() {
     setMsg('Categorizing...');
     // trigger file organization
     try {
-      const response = await fetch(`/api/categorize`, {
+      const response = await fetch(`https://google-drive-organizer.onrender.com/api/categorize`, {
         method: 'POST'
       });
       if (!response.ok) {
@@ -161,7 +161,7 @@ function App() {
     setMsg('Cleaning up...');
     // trigger file organization
     try {
-      const response = await fetch(`/api/cleanup`, {
+      const response = await fetch(`https://google-drive-organizer.onrender.com/api/cleanup`, {
         method: 'POST'
       });
       if (!response.ok) {
@@ -188,7 +188,7 @@ function App() {
     setMsg('Merging...');
     // trigger file organization
     try {
-      const response = await fetch(`/api/merge`, {
+      const response = await fetch(`https://google-drive-organizer.onrender.com/api/merge`, {
         method: 'POST'
       });
       if (!response.ok) {
@@ -261,7 +261,7 @@ function App() {
 
     // upload files to api
     try {
-      const response = await fetch(`/api/upload`, {
+      const response = await fetch(`https://google-drive-organizer.onrender.com/api/upload`, {
         method: 'POST',
         body: formData
       });
