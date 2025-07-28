@@ -14,8 +14,8 @@ export default defineConfig({
     proxy: {
       '/api': {
         target: 'https://google-drive-organizer.onrender.com',
+        changeOrigin: true,
       }
     },
   },
 })
-
